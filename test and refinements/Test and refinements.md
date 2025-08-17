@@ -1,10 +1,9 @@
 ## Testing and Refinements
 
-[cite_start]In this step, we will analyze the system with a truth table and discuss further refinements that can be made in the future[cite: 83]. [cite_start]To test this system, we will assume we have 4 inputs and 2 outputs, each with 2 states (0,1), which will give us a combination of 16 possible outcomes ($2^4$)[cite: 84].
-
-[cite_start]The two outputs are determined by these exact formulas[cite: 85]:
-* [cite_start]**Dispense Food (Y) = A AND (NOT B) AND C**: This logic correctly ensures that food is only dispensed when all three conditions are met: it's feed time (A=1), the bin is NOT empty (B=0), and the bowl IS empty (C=1)[cite: 86].
-* [cite_start]**Alert (Z) = (A AND B) OR (A AND (NOT B) AND C AND (NOT D))**: This logic correctly ensures that the alert is only active high on 5 conditions[cite: 87, 88].
+ In this step, we will analyze the system with a truth table and discuss further refinements that can be made in the future[cite: 83].  To test this system, we will assume we have 4 inputs and 2 outputs, each with 2 states (0,1), which will give us a combination of 16 possible outcomes ($2^4$)
+ The two outputs are determined by these exact formulas
+*  **Dispense Food (Y) = A AND (NOT B) AND C**: This logic correctly ensures that food is only dispensed when all three conditions are met: it's feed time (A=1), the bin is NOT empty (B=0), and the bowl IS empty (C=1)
+*  **Alert (Z) = (A AND B) OR (A AND (NOT B) AND C AND (NOT D))**: This logic correctly ensures that the alert is only active high on 5 conditions
 
 ### Truth Table
 
@@ -29,7 +28,7 @@
 
 ### Discussion and Refinements
 
-[cite_start]The current logic is primitive but fulfills the main requirements[cite: 95]. Nevertheless, it can be enhanced with minor adjustments:
-* [cite_start]**Add a “snooze”**: A grace period of 30 minutes could be allowed after a pet does not eat before the final alarm goes off[cite: 96]. [cite_start]This would reduce false alarms if a pet is just momentarily distracted[cite: 97].
-* [cite_start]**Manual Feed Button**: A physical button could be introduced to allow staff to dispense food manually[cite: 98].
-* [cite_start]**Distinctive Alerts**: Different alerts could be used for different problems (e.g., a solid red light for an empty hopper, a flashing red light for uneaten food) to make staff immediately aware of the specific issue[cite: 99].
+ The current logic is primitive but fulfills the main requirements. Nevertheless, it can be enhanced with minor adjustments:
+*  **Add a “snooze”**: A grace period of 30 minutes could be allowed after a pet does not eat before the final alarm goes off.  This would reduce false alarms if a pet is just momentarily distracted.
+*  **Manual Feed Button**: A physical button could be introduced to allow staff to dispense food manually.
+*  **Distinctive Alerts**: Different alerts could be used for different problems (e.g., a solid red light for an empty hopper, a flashing red light for uneaten food) to make staff immediately aware of the specific issue.
