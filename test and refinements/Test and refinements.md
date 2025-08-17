@@ -1,8 +1,10 @@
 ## Testing and Refinements
 
- In this step, we will analyze the system with a truth table and discuss further refinements that can be made in the future[cite: 83].  To test this system, we will assume we have 4 inputs and 2 outputs, each with 2 states (0,1), which will give us a combination of 16 possible outcomes ($2^4$)
+In this step we will analyze the system with truth table and we will also discuss the further refinements that can be done in the future. Hence, to test this system we will assume that we have 4 inputs, 2 output with  2 states (0,1) , which will give us the combination of of (2^4) = 16 possible outcomes.
+The two outputs are determined by these exact formulas:
+
  The two outputs are determined by these exact formulas
-*  **Dispense Food (Y) = A AND (NOT B) AND C**: This logic correctly ensures that food is only dispensed when all three conditions are met: it's feed time (A=1), the bin is NOT empty (B=0), and the bowl IS empty (C=1)
+*  **Dispense Food (Y) = A AND (NOT B) AND C**: This logic correctly ensures that food is only dispensed when all three conditions are met: it's feed time (A=1), the bin is NOT empty (B=0), and the bowl IS empty (C=1).
 *  **Alert (Z) = (A AND B) OR (A AND (NOT B) AND C AND (NOT D))**: This logic correctly ensures that the alert is only active high on 5 conditions
 
 ### Truth Table
@@ -29,6 +31,6 @@
 ### Discussion and Refinements
 
  The current logic is primitive but fulfills the main requirements. Nevertheless, it can be enhanced with minor adjustments:
-*  **Add a “snooze”**: A grace period of 30 minutes could be allowed after a pet does not eat before the final alarm goes off.  This would reduce false alarms if a pet is just momentarily distracted.
-*  **Manual Feed Button**: A physical button could be introduced to allow staff to dispense food manually.
-*  **Distinctive Alerts**: Different alerts could be used for different problems (e.g., a solid red light for an empty hopper, a flashing red light for uneaten food) to make staff immediately aware of the specific issue.
+*  **Add a “snooze”**: The computer may allow a 3-Snooze or a 30 minute grace period to pass between the time a pet is not eating, and an ultimate alarm goes off. This would reduce false alarms within the environment that has just distracted a pet.
+*  **Manual Feed Button**:Introduce a physical release button that staff can push manually to release food when the premises is closed. 
+*  **Distinctive Alerts**: Use different colored alerts / alerts (e.g. Solid red light on a full hopper, flashing red for uneaten food), so your employees are aware of the problem.
