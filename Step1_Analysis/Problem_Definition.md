@@ -22,3 +22,10 @@ Any automated system such as that requires a microcontroller such as Aurdino, in
 * There will be a constant supply of power to the feeder.
 * Single kind of dry pet food will be used.
 * The feeder accepts only one pet at a time because the device lacks sensitive functions such as pet recognition with the help of a camera characteristic of more elaborate systems.
+
+## References
+Li, Q., Shen, X., Cheng, Z. & Liu, Y. 2023, ‘Design and implementation of intelligent pet feeding system’, *2023 IEEE 22nd International Conference on Trust, Security and Privacy in Computing and Communications (TrustCom)*, Exeter, United Kingdom, 15–17 Nov., IEEE, pp. 2629–2635, viewed 17 August 2025, <https://doi.org/10.1109/TrustCom60117.2023.00367>.
+
+Mulla, A., Wakshe, P., Gharat, V., Chavan, A., Raut, N. & Shelke, U., 2025. 'Automatic Pet Feeder', *International Journal of Advanced Research in Science, Communication and Technology (IJARSCT)*, vol. 5, no. 1, pp.637-642. Available at: <https://ij
+
+ 
